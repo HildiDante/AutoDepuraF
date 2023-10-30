@@ -3,6 +3,7 @@ import 'package:auto_depura/core/extensions/double_to_input_text.dart';
 import 'package:auto_depura/core/extensions/string_to_double.dart';
 import 'package:auto_depura/core/services/service_locator.dart';
 import 'package:auto_depura/ui/pages/widgets/custom_card.dart';
+import 'package:auto_depura/ui/widgets/custom_card_or.dart';
 import 'package:auto_depura/ui/widgets/custom_input.dart';
 import 'package:flutter/material.dart';
 
@@ -38,7 +39,6 @@ class _DadosEsgotoStep1State extends State<DadosEsgotoStep1> {
         widget.onPressed(action);
         bloc.qe = controller1.text.asDouble;
         bloc.ode = controller2.text.asDouble;
-        
       },
       children: [
         CustomInput(
@@ -46,12 +46,12 @@ class _DadosEsgotoStep1State extends State<DadosEsgotoStep1> {
           title: "Qe",
           hintText: "m³/s",
         ),
+        const CustomCardOr(),
         CustomInput(
           controller: controller2,
           title: "ODe",
           hintText: "mg/L",
         ),
-       
       ],
     );
   }

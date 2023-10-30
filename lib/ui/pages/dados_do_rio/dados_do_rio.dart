@@ -2,7 +2,6 @@ import 'package:auto_depura/ui/pages/dados_do_rio/steps/dados_rio_step1.dart';
 import 'package:auto_depura/ui/pages/widgets/custom_card.dart';
 import 'package:auto_depura/ui/theme/app_theme.dart';
 import 'package:auto_depura/ui/widgets/app_title.dart';
-import 'package:auto_depura/ui/widgets/custom_input.dart';
 import 'package:flutter/material.dart';
 
 class DadosDoRioPage extends StatefulWidget {
